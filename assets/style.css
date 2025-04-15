@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family: 'iranyekan';
+    src: url('IRANYekanX-Medium-sNcE5o7O.woff2') format("truetype");
+}
+
+* {
+    font-family: 'iranyekan';
+}
+
+@theme {
+    --color-product: #f6d1d9;
+    --color-sponser: #f1bbc6;
+    --color-team: #e88da0;
+    --color-h1: #EDA4B3;
+    --color-divSpan: #A55A6A80;
+    --color-text: #F6D1D9;
+    --color-section: #C67385;
+    --color-btn: #A55A6A;
+    --color-textBtn: #83404E;
+    --color-footerText: #622733;
+}
+
+.grid-custom {
+    @apply grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+@media screen and (max-width: 550px) {
+    .grid-custom {
+        @apply grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
