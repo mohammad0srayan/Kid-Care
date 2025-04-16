@@ -30,8 +30,16 @@
         <a class="flex justify-center items-center text-6xl text-h1 font-bold clickEvent" href="#"><ion-icon name="menu"></ion-icon></a>
       </div>
 
-      <div class="fixed top-0 left-0 w-full z-[999] bg-divSpan h-[100vh] p-5 hidden sidebar">
-        <a class="hideSidebar text-h1 text-7xl" href="#"><ion-icon name="close"></ion-icon></a>
+      <div class="fixed top-0 left-0 w-full z-[999] bg-divSpan h-[100vh] p-5 hidden sidebar flex-col">
+        <div>
+          <a class="hideSidebar text-h1 text-7xl" href="#"><ion-icon name="close"></ion-icon></a>
+        </div>
+
+        <div class="flex items-center gap-5 text-center w-full h-max mt-10 max-[500px]:flex-wrap">
+          <a class="py-4 rounded-md bg-team text-white w-full" href="#">تیم سازنده</a>
+          <a class="py-4 rounded-md bg-sponser text-black w-full" href="#">اسپانسرها</a>
+          <a class="py-4 rounded-md bg-product text-black w-full" href="#">ویژگی‌های محصول</a>
+        </div>
       </div>
     </header>
 
