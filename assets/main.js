@@ -27,6 +27,7 @@ function postMessage(event) {
 
     if (textAreaValue) {
         alert('پیام شما برای تیم ما ارسال شد.')
+        textArea.value = ''
     }
 }
 

@@ -5,8 +5,20 @@
     src: url('IRANYekanX-Medium-sNcE5o7O.woff2') format("truetype");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'iranyekan';
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
 }
 
 @theme {
