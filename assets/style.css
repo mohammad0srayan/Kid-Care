@@ -44,8 +44,17 @@ a {
     text-shadow: 0 0 15px rgb(0 ,0 ,0 , 0.5);
 }
 
+.grid-custom-team {
+    @apply grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 @media screen and (max-width: 550px) {
     .grid-custom {
+        @apply grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .grid-custom-team {
         @apply grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
