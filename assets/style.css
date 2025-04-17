@@ -33,6 +33,7 @@ a {
     --color-textBtn: #83404E;
     --color-footerText: #622733;
     --color-boldtext: rgba(0, 0, 0, 0.71);
+    --color-ourTeam: #622733;
 }
 
 .grid-custom {
@@ -41,7 +42,7 @@ a {
 }
 
 .main--h1 {
-    text-shadow: 0 0 15px rgb(0 ,0 ,0 , 0.5);
+    text-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
 }
 
 .grid-custom-team {
