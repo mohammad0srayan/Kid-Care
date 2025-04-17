@@ -20,11 +20,16 @@
     --color-btn: #A55A6A;
     --color-textBtn: #83404E;
     --color-footerText: #622733;
+    --color-boldtext: rgba(0, 0, 0, 0.71);
 }
 
 .grid-custom {
     @apply grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.main--h1 {
+    text-shadow: 0 0 15px rgb(0 ,0 ,0 , 0.5);
 }
 
 @media screen and (max-width: 550px) {
