@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 @font-face{
     font-family: 'iranyekan';
     src: url('IRANYekanX-Medium-sNcE5o7O.woff2') format("truetype");
@@ -57,6 +55,6 @@ a {
     }
     .grid-custom-team {
         @apply grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
