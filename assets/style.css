@@ -19,6 +19,16 @@ a {
     cursor: pointer;
 }
 
+.dark-mode {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #fff;
+    --secondary-color: #a4a5v8;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+    --accent-color-text: #fff;
+}
+
 @theme {
     --color-product: #f6d1d9;
     --color-sponser: #f1bbc6;
@@ -32,6 +42,7 @@ a {
     --color-footerText: #622733;
     --color-boldtext: rgba(0, 0, 0, 0.71);
     --color-ourTeam: #622733;
+    --color-ourTeam2: #e88da0;
 }
 
 .grid-custom {
@@ -57,4 +68,14 @@ a {
         @apply grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+}
+
+.swiper-slide--counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    height: 38rem;
 }

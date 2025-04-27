@@ -5,9 +5,10 @@ let textArea = document.getElementById('text-box')
 let btnBox = document.querySelector('#btn-submit')
 
 clickShowSidebar.addEventListener('click', showSidebar)
-
 clickHideSidebar.addEventListener('click', hideSidebar);
 
+let btnDarkLightMode = document.querySelector('.dark-light')
+let hasDarkLight = false
 
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
@@ -50,3 +51,22 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+let lightMode = document.getElementById("light")
+let darkMode = document.getElementById("dark")
+
+btnDarkLightMode.addEventListener("click", toggleDarkAndLightMode)
+
+function toggleDarkAndLightMode() {
+    if (!hasDarkLight) {
+        document.body.classList.remove('dark-mode')
+        lightMode.style.display = "flex"
+        darkMode.style.display = "none"
+        hasDarkLight = true
+    } else {
+        document.body.classList.add("dark-mode")
+        lightMode.style.display = "none"
+        darkMode.style.display = "flex"
+        hasDarkLight = false
+    }
+}
